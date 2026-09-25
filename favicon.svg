@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Favicon placeholder: orchid on lagoon teal. Replace with final brand mark at the same path. -->
+  <rect width="64" height="64" rx="14" fill="#0D5F63"/>
+  <g transform="translate(32 34) scale(1.05)" fill="#FBE6EA" stroke="#F7B5C1" stroke-width="1.2">
+    <ellipse cx="0" cy="-12" rx="6" ry="12.5"/>
+    <ellipse cx="0" cy="-12" rx="5.2" ry="12" transform="rotate(128)"/>
+    <ellipse cx="0" cy="-12" rx="5.2" ry="12" transform="rotate(-128)"/>
+    <ellipse cx="0" cy="-11" rx="11" ry="11.5" transform="rotate(74)"/>
+    <ellipse cx="0" cy="-11" rx="11" ry="11.5" transform="rotate(-74)"/>
+    <path d="M-5 2 Q-6 10 0 13 Q6 10 5 2 Q0 5 -5 2Z" fill="#C4516A" stroke="none"/>
+  </g>
+</svg>
