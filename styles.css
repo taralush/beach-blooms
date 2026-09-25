@@ -380,7 +380,6 @@ strong { font-weight: 700; }
 }
 
 /* Watercolor truck: sits on its own cream paper, so lighten the frame treatment */
-.series-photo img:not(.deco) { box-shadow: 0 20px 44px -30px rgba(43, 39, 40, .35); border: 1px solid var(--line); background: #F8F5F0; }
 
 /* Drive spotlight (hero) */
 .spotlight { display: flex; flex-direction: column; gap: .35rem; margin-top: 1.6rem; padding: 1rem 1.2rem; border-radius: 12px; background: var(--paper); border: 1px solid var(--line); border-left: 4px solid var(--teal); text-decoration: none; color: var(--ink); max-width: 34rem; transition: transform .25s var(--ease), box-shadow .25s; }
