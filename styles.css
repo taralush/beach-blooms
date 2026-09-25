@@ -381,3 +381,44 @@ strong { font-weight: 700; }
 
 /* Watercolor truck: sits on its own cream paper, so lighten the frame treatment */
 .series-photo img:not(.deco) { box-shadow: 0 20px 44px -30px rgba(43, 39, 40, .35); border: 1px solid var(--line); background: #F8F5F0; }
+
+/* Drive spotlight (hero) */
+.spotlight { display: flex; flex-direction: column; gap: .35rem; margin-top: 1.6rem; padding: 1rem 1.2rem; border-radius: 12px; background: var(--paper); border: 1px solid var(--line); border-left: 4px solid var(--teal); text-decoration: none; color: var(--ink); max-width: 34rem; transition: transform .25s var(--ease), box-shadow .25s; }
+.spotlight:hover { transform: translateY(-2px); box-shadow: 0 12px 28px -18px rgba(43,39,40,.4); color: var(--ink); }
+.spotlight-tag, .drive-tag { font: 700 .7rem/1.2 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--teal-deep); margin: 0; }
+.spotlight-text { font-size: .98rem; line-height: 1.5; }
+.spotlight cite { font-weight: 600; }
+
+/* Author: reader quote + Drive card */
+.author-quote { margin: 0 0 1.8rem; }
+.author-quote blockquote { margin: 0; }
+.author-quote p { margin: 0; font: italic 500 clamp(1.5rem, 4vw, 1.9rem)/1.25 var(--serif); color: var(--pink-deep); }
+.author-quote figcaption { margin-top: .4rem; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+.drive-card { background: var(--teal-night); color: #D8EEEE; border-radius: var(--radius); padding: 1.4rem 1.5rem; margin-bottom: 2rem; position: relative; overflow: hidden; }
+.drive-card::after { content: ""; position: absolute; right: -40px; top: -40px; width: 160px; height: 160px; border-radius: 50%; background: radial-gradient(circle, rgba(42,175,179,.45), transparent 70%); }
+.drive-card .drive-tag { color: var(--pink); }
+.author-copy .drive-card p { color: #D8EEEE; }
+.author-copy .drive-card .drive-tag { color: var(--pink); }
+.drive-title { margin: .35rem 0 .5rem; font: 600 1.9rem/1.1 var(--serif); }
+.author-copy .drive-card .drive-title { color: #fff; }
+.drive-title span { font: italic 400 1.2rem var(--serif); color: #BFE3E3; }
+.drive-text { margin: 0; font-size: 1rem; }
+.drive-card strong { color: #fff; }
+
+/* Reviews source line */
+.review-list li { flex-direction: column; gap: .7rem; }
+.review-list .src { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); }
+
+/* Rights at a glance */
+.glance { margin: 0 0 2rem; display: grid; gap: 1px; background: rgba(255,255,255,.14); border-radius: var(--radius); overflow: hidden; }
+.glance div { background: rgba(255,255,255,.06); padding: 1rem 1.3rem; }
+.glance dt { font: 700 .7rem/1.2 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--pink); margin-bottom: .3rem; }
+.glance dd { margin: 0; font: 500 1.1rem/1.35 var(--serif); color: #fff; }
+@media (min-width: 640px) {
+  .glance { grid-template-columns: 1fr 1fr; }
+  .rights-points { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 960px) {
+  .rights-points { grid-template-columns: repeat(4, 1fr); }
+  .rights-inner { max-width: 1000px; }
+}
