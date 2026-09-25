@@ -371,3 +371,13 @@ strong { font-weight: 700; }
 .author-photo { max-width: 300px; }
 .author-photo img { aspect-ratio: 1 / 1; border-radius: 150px 150px 12px 12px; }
 .author-photo::before { border-radius: 162px 162px 14px 14px; }
+
+.author-copy a { color: var(--teal-deep); font-weight: 600; }
+.author-copy a:hover { color: var(--pink-deep); }
+@media (min-width: 960px) {
+  .author-grid { align-items: start; }
+  .author-photo { margin-top: 1rem; position: sticky; top: calc(var(--header-h) + 32px); }
+}
+
+/* Watercolor truck: sits on its own cream paper, so lighten the frame treatment */
+.series-photo img:not(.deco) { box-shadow: 0 20px 44px -30px rgba(43, 39, 40, .35); border: 1px solid var(--line); background: #F8F5F0; }
