@@ -279,15 +279,15 @@
       <div class="wrap author-grid">
         <div class="author-photo reveal">
           <!-- =====================================================
-               AUTHOR PHOTO
-               Replace the placeholder <div> below with:
-               <img src="tara-lush.jpg" width="600" height="750"
-                    alt="Author Tara Lush" loading="lazy" decoding="async">
-               Recommended: 4:5 portrait, ~600×750px, under 120 KB.
+               AUTHOR PHOTO: tara-lush.jpg / tara-lush.webp (square).
+               For a sharper image, replace both with a larger square
+               version (600×600 or more) using the same file names.
                ===================================================== -->
-          <div class="photo-placeholder" role="img" aria-label="Author photo coming soon">
-            <span>TL</span>
-          </div>
+          <picture>
+            <source type="image/webp" srcset="tara-lush.webp">
+            <img src="tara-lush.jpg" width="300" height="300" loading="lazy" decoding="async"
+                 alt="Author Tara Lush, smiling, at her laptop.">
+          </picture>
         </div>
 
         <div class="author-copy">

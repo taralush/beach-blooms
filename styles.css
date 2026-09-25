@@ -366,3 +366,8 @@ strong { font-weight: 700; }
 .reviews-note { margin: 1rem 0 0; font-size: .8rem; letter-spacing: .08em; color: var(--ink-soft); }
 @media (min-width: 640px) { .review-list { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 960px) { .review-list { grid-template-columns: repeat(4, 1fr); } }
+
+/* Author photo: square source */
+.author-photo { max-width: 300px; }
+.author-photo img { aspect-ratio: 1 / 1; border-radius: 150px 150px 12px 12px; }
+.author-photo::before { border-radius: 162px 162px 14px 14px; }
